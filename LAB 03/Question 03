@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+	int Salary,Tax,NewSalary;
+	float TaxRate;
+	printf("Enter the Salary here:");
+	scanf("%d",&Salary);
+	printf("Enter the Tax Rate here (not in percentage):");
+	scanf("%f",&TaxRate);
+	Tax=Salary*TaxRate;
+	NewSalary=Salary-Tax;
+	printf("you have to pay:%d tax\n and the salary would be after the tax:%d",Tax,NewSalary);
+	return(0);
+}
