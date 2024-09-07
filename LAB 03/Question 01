@@ -1,1 +1,1 @@
-
+Ans: The Value stored is too big for the memory, by default a computer can save a value up to only 4 bytes. the solution of this is to use the Datatype of Double.
