@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+	int rate,time,principal;
+	float interest;
+	printf("Enter the rate (in percentage)(5 to 10):");
+	scanf("%d",&rate);
+	printf("Enter the principal amount (100 to 1,000,000):");
+	scanf("%d",&principal);
+	printf("Enter the time (1 to 10 years):");
+	scanf("%d",&time);
+	if (rate>=5 && rate<=10)
+	   if (time>=1 && time<=10)
+	      if  (principal>=100 && principal<=1000000)
+	          {interest=(principal*rate*time)/100;}
+	       else 
+	        {printf("invalid amount");}
+	    else
+	    {printf("invalid time");}
+	else
+	{printf("invalid rate");}
+	printf("interest is:%f",interest);
+	return(0);	    
+}
