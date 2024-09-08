@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main()
+{
+	const int x_1=5;
+	const int x_2=3;
+	const int y_1=4;
+	const int y_2=2;
+	float slope;
+	slope=(y_2-y_1)/(x_2-x_1);
+	printf("the slope is:%.3f",slope);
+	return(0);
+}
