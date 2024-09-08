@@ -1,0 +1,26 @@
+A car travelled back and forth from point A to point B. With a distance being (single trip) 1207KM. During
+the forward trip fuel price was 118/liter while returning it was 123/liter. Calculate the total fuel cost
+(both ways) and the fuel consumed (total trip). Use the car’s fuel average as input from the user (Input
+must be positive make some restrictions on only accepting positive input)
+
+#include <stdio.h>
+int main()
+{
+    float average,total_fuel_cost,fuel_consumed,fuel_cost_B,fuel_cost_A,total_fuel_consumed;
+    const int distance=1207;
+    const int total_distance=2414;
+    const int fuel_A=118;
+    const int fuel_B=123;
+	printf("Enter the Average of the car in km/l:");
+	scanf("%f",&average);
+	if (average<=0)
+	{printf("Enter the price again,inavlid input");}
+	else
+	{fuel_consumed=distance/average;}
+	{fuel_cost_A=fuel_consumed*fuel_A;}
+	{fuel_cost_B=fuel_consumed*fuel_B;}
+	{total_fuel_cost=fuel_cost_B+fuel_cost_A;}
+	{total_fuel_consumed=total_distance/average;}
+	printf("Total fuel cost is:%f\n Total fuel consumed is:%f",total_fuel_cost,total_fuel_consumed);
+	return(0);
+}
