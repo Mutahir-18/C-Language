@@ -1,3 +1,6 @@
+Construct a C program where you calculate the slope of two point (5,4), (3,2). Use format specifiers to
+cap the result to 3 decimal places.
+
 #include <stdio.h>
 int main()
 {
