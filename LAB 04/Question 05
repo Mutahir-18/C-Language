@@ -1,0 +1,39 @@
+#include <stdio.h>
+int main()
+{
+	float s_amount,after_amount;
+	int discount,a_amount;
+	printf("Enter the actual amount of the product:");
+	scanf("%d",&a_amount);
+	if (a_amount<2000)
+	{
+		discount=5;
+		after_amount=a_amount-(a_amount*0.05);
+		s_amount=a_amount-after_amount;
+	}
+	else if (a_amount>=2000 && a_amount<=4000)
+	{
+		discount=10;
+		after_amount=a_amount-(a_amount*0.1);
+		s_amount=a_amount-after_amount;
+	
+	}
+	else if (a_amount>4000 && a_amount<=6000)
+	{
+		discount=20;
+		after_amount=a_amount-(a_amount*0.2);
+		s_amount=a_amount-after_amount;
+	}
+	else if (a_amount>6000)
+	{
+		discount=35;
+		after_amount=a_amount-(a_amount*0.35);
+		s_amount=a_amount-after_amount;
+	}
+	else
+	{ 
+		printf("No Discount");
+    }
+    printf("The Saved Amount is:%f\n The Amount after Discount is:%f\n The Actual Amount was:%f",s_amount,after_amount,a_amount);
+	return(0);
+}
