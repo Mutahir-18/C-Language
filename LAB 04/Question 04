@@ -1,0 +1,28 @@
+Write a C program to input a character from the user and check whether the 
+given character is a small alphabet, capital alphabet, digit, or special character, 
+using if else.
+
+#include <stdio.h>
+int main()
+{
+	char character;
+	printf("Enter the Character:");
+	scanf("%c",&character);
+	if (character>='0' && character<='9')
+	{
+	    printf("The input is a digit");
+    }
+	else if (character>='a' && character<='z') 
+	{
+		printf("The input is small alphabats");
+	}
+	else if (character>='A' && character<='Z')
+	{
+		printf("The input is Big Alphabats");
+	}
+	else 
+	{
+		printf("The input is special Charater");
+	}
+return(0);
+}
