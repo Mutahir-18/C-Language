@@ -1,0 +1,38 @@
+Create a calculator asking for operator (+ or – or * or /) and operands and 
+performs calculation according to the user input using switch statement.
+
+#include <stdio.h>
+int main()
+{
+	char op;
+	int num01,num02,sum;
+	printf("Enter the number 01:");
+	scanf("%d",&num01);
+	printf("Enter the number 02:");
+	scanf("%d",&num02);
+	printf("Enter the operator:");
+	scanf(" %c",&op);
+	switch (op)
+	{
+		case '+':
+			sum=num01+num02;
+			printf("The sum is:%d",sum);
+			break;
+		case '-':
+			sum=num01-num02;
+			printf("The sum is:%d",sum);
+			break;
+		case '/':
+			sum=num02/num01;
+			printf("The sum is:%d",sum);
+			break;
+		case '*':
+			sum=num01*num02;
+			printf("The sum is:%d",sum);
+			break;
+		default:
+		    printf("invalid Operator");
+	}
+
+	return(0);
+}
