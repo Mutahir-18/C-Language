@@ -1,0 +1,45 @@
+Given a positive integer denoting n, do the following:
+   a. If 1<=n<=9, print lowercase English words corresponding to the 
+   numbers e.g. (one for 1, two for 2)
+   b. If n>9 print greater then 9
+
+#include <stdio.h>
+int main()
+{
+	int n;
+	printf("Enter the number:");
+	scanf("%d",&n);
+	switch (n)
+	{
+	    case 1:
+		 	printf("The Number is one");
+		 	break;
+		case 2:
+			printf("The Number is two");
+			break;
+		case 3:
+			printf("The Number is three");
+		 	break;
+		case 4:	
+			printf("The Number is four");
+		 	break;
+		case 5:
+		 	printf("The Number is five");
+		 	break;
+		case 6:
+		 	printf("The Number is six");
+		 	break;
+		case 7:
+		 	printf("The Number is seven");
+		 	break;
+		case 8:
+		 	printf("The Number is eight");
+		 	break;
+		case 9:
+		 	printf("The Number is nine");
+		 	break;
+		default:
+			printf("The number is greater than 9");
+		 }
+		return(0);
+}
