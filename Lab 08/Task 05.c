@@ -6,8 +6,8 @@ int main()
 {
     int star,i,j;
     printf("Enter the rows:");
-    scanf("%d", &star);
-// for Upper
+    scanf(" %d", &star);
+
     for (i=0; i<star; i++)
     {
         for (j=star -i; j>1; j--)
@@ -20,6 +20,18 @@ int main()
         }
         printf("\n");
     }
-// for Lower
+
+    for (i = 0; i < star - 1; i++) 
+    {  
+        for (j = 0; j < i + 1; j++) 
+        {  
+            printf(" ");
+        }
+        for (j = 0; j < star - i - 1; j++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+}
 
 }
