@@ -3,30 +3,28 @@ built-in strlen() or sizeof() function. After length calculation reverse the str
 the same pointers.
 
 #include <stdio.h>
-int main()
-{
-    int i,length=0;
-    char *ptr[100];
-    int *ptr1;
+
+int main() {
     char text[100];
-    printf("Enter the text Here:");
+    int length = 0;
+    
+    printf("Enter the text here: ");
     scanf("%s", text);
-    for (i = 0; text[i] != '\0'; i++)
-    {
-        ptr[i] = text + i;
+    
+    while (text[length] != '\0') {
         length++;
     }
-    ptr1 = &length;
-    printf(" The Length is:%d\n", *ptr1);
 
-    for (i = 0; i < length; i++)
-    {
-        text[length--] = *ptr[i];
-    }
     
-    printf("The Reversed Text is:");
-    for (i = 0; i < length ; i++)
-    {
-        printf("%c", text[i]);
+    for (int i = 0; i < length / 2; i++) {
+        char temp = text[i];
+        text[i] = text[length - 1 - i];
+        text[length - 1 - i] = temp;
     }
+
+    
+    printf("The Length is: %d\n", length);
+    printf("The Reversed Text is: %s\n", text);
+
+    return 0;
 }
