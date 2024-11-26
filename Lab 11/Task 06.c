@@ -3,8 +3,6 @@ Define a structure Employee with fields name, id, salary, and a nested structure
 store them in a file, and read them back to display.
 
 #include <stdio.h>
-#include <stdlib.h>
-
 typedef struct Address {
     char city[50];
     int zip_code;
