@@ -3,7 +3,8 @@ another nested structure Marks (fields: maths, science, and english). Use an arr
 Student to store data for 5 students and calculate the average marks for each student.
 
 #include <stdio.h>
-
+#include <string.h>
+    
 typedef struct subjects{
     int math;
     int science;
