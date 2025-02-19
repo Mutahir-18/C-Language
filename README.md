@@ -1,4 +1,4 @@
-Alright, Mutair Ahmed Khan, brace yourself! 🚨 You’re about to step into the dark, mysterious, and slightly terrifying world of **C programming**. Think of C as that haunted house of programming languages—it’s old, it’s powerful, and it’s full of traps that will make you question your life choices. 👻
+Alright, GitHubbers, brace yourself! 🚨 You’re about to step into the dark, mysterious, and slightly terrifying world of **C programming**. Think of C as that haunted house of programming languages—it’s old, it’s powerful, and it’s full of traps that will make you question your life choices. 👻
 
 So, you’ve decided to take on C. Maybe you’re here because you want to feel like a coding wizard, or maybe you just enjoy the adrenaline rush of debugging segmentation faults at 3 a.m. Either way, welcome! C is like that horror movie villain who whispers, “You wanted control? Well, here’s a pointer. Good luck not dereferencing it into oblivion.” 😱
 
